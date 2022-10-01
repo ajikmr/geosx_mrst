@@ -231,7 +231,7 @@
       fieldName="pressure"
       scale="2.0e7"/>
 
-    <!-- Initial composition: no water, only heavy hydrocarbon components and N2 -->
+    <!-- Initial composition: no water -->
     <FieldSpecification
       name="initialComposition_N2-CH4"
       initialCondition="1"
