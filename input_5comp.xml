@@ -300,12 +300,12 @@
   <Tasks>
     <PackCollection
       name="wellRateCollection1"
-      objectPath="ElementRegions/wellRegion1/wellRegion1uniqueSubRegion"
+      objectPath="ElementRegions/wellRegion1/wellRegion1UniqueSubRegion"
       fieldName="wellElementMixtureConnectionRate"/>
 
     <PackCollection
       name="wellRateCollection2"
-      objectPath="ElementRegions/wellRegion2/wellRegion2uniqueSubRegion"
+      objectPath="ElementRegions/wellRegion2/wellRegion2UniqueSubRegion"
       fieldName="wellElementMixtureConnectionRate"/>
     </Tasks>
 </Problem>
