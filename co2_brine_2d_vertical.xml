@@ -35,7 +35,7 @@
         control="totalVolRate"
         referenceElevation="0.5"
         targetTotalRate="9.5066e-6"
-        targetBHP="6e6"
+        targetBHP="5.3e6"
         injectionTemperature="303.15"
         injectionStream="{ 0, 1 }"/>
       <WellControls
