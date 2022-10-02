@@ -4,7 +4,7 @@
 ### Based on MRST example at: ###
 https://bitbucket.org/mrst/mrst-autodiff/src/master/compositional/examples/compositionalExample3DSixComponents.m
 
-GEOSX input file name: input_5comp.xml
+GEOSX input file name: input_5comp.xml  
 MRST input file name: input_5comp.m
 
 * GEOSX has MAX_COMPONENT=5, and so last component of original example (i.e. 'C25-80') is not used.
