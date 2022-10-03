@@ -1,6 +1,6 @@
 # geosx_mrst
 
-## Exampe 1 ##
+## Example 1 ##
 ### Based on MRST example at: ###
 https://bitbucket.org/mrst/mrst-autodiff/src/master/compositional/examples/compositionalExample3DSixComponents.m
 
@@ -12,7 +12,7 @@ MRST solution file name: mrst_soln.png
 * Initial pressure (p_i) in original example is 150bar. GEOSX run fails with 150 bar, and so 200 bar is used. MRST run fails with 200 bar of p_i.
 
 
-## Exampe 2 ##
+## Example 2 ##
 ### Based on MRST example at: ###
 https://bitbucket.org/mrst/mrst-autodiff/src/master/sequential/examples/compositionalHybridUpwind.m
 
