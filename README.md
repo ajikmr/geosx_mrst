@@ -5,7 +5,7 @@
 https://bitbucket.org/mrst/mrst-autodiff/src/master/compositional/examples/compositionalExample3DSixComponents.m
 
 GEOSX input file name: input_5comp.xml  
-JUTUL input file name: input_5comp.jl
+JUTUL input file name: input_5comp.jl  
 MRST input file name: input_5comp.m  
 MRST solution file name: mrst_soln.png
 
