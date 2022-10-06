@@ -27,7 +27,7 @@ K = repeat([5.0e-14], 1, nc)
 res = discretized_domain_tpfv_flow(tpfv_geometry(g), porosity = 0.25, permeability = K)
 ## Set up a vertical well in the first corner, perforated in all layers
 prod = setup_vertical_well(g, K, nx, ny, name = :Producer)
-## Set up an injector in the upper left corner
+## Set up an injector in the opposite corner, perforated in all layers
 inj = setup_vertical_well(g, K, 1, 1, name = :Injector)
 
 ## Plot the permeability (scaled to Darcy) and the wells
