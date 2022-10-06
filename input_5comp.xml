@@ -10,8 +10,9 @@
       logLevel="1"
       targetRegions="{ Region1, wellRegion1, wellRegion2 }">
       <NonlinearSolverParameters
-        newtonTol="1.0e-8"
-        lineSearchAction="None"
+        allowNonConverged="1"
+        newtonTol="1.0e-6"
+        lineSearchAction="Attempt"
         newtonMaxIter="40"/>
       <LinearSolverParameters
         directParallel="0"/>
@@ -148,7 +149,7 @@
 
     <PeriodicEvent
       name="restarts"
-      timeFrequency="1e7"
+      timeFrequency="3e7"
       targetExactTimestep="0"
       target="/Outputs/restartOutput"/>
   </Events>
@@ -207,7 +208,7 @@
       name="rockPorosity"
       defaultReferencePorosity="0.25"
       referencePressure="2.28e7"
-      compressibility="1.0e-9"/>
+      compressibility="0.0"/>
 
     <BrooksCoreyRelativePermeability
       name="relperm"
@@ -229,9 +230,9 @@
       setNames="{ all }"
       objectPath="ElementRegions/Region1/block1"
       fieldName="pressure"
-      scale="2.0e7"/>
+      scale="1.5e7"/>
 
-    <!-- Initial composition: no water -->
+    <!-- Initial composition: no water, only heavy hydrocarbon components and N2 -->
     <FieldSpecification
       name="initialComposition_N2-CH4"
       initialCondition="1"
