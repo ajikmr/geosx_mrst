@@ -16,7 +16,7 @@ MRST solution file name: mrst_soln.png
 ### Based on MRST example at: ###
 https://bitbucket.org/mrst/mrst-autodiff/src/master/sequential/examples/compositionalHybridUpwind.m
 
-GEOSX input file name: co2_brine_2d_vertical.xml
+GEOSX input file name: co2_brine_2d_vertical.xml  
 JUTUL input file name: co2_brine_2d_vertical.jl 
 
 
