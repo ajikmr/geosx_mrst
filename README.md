@@ -1,4 +1,4 @@
-# geosx_mrst
+# geosx_mrst_jutul
 
 ## Example 1 ##
 ### Based on MRST example at: ###
@@ -17,6 +17,6 @@ MRST solution file name: mrst_soln.png
 https://bitbucket.org/mrst/mrst-autodiff/src/master/sequential/examples/compositionalHybridUpwind.m
 
 GEOSX input file name: co2_brine_2d_vertical.xml
+JUTUL input file name: co2_brine_2d_vertical.jl 
 
-* Phase density calculations seems to be matching.
-* Gravity segregation is more prominent in mrst solution as compared to geosx.
+
