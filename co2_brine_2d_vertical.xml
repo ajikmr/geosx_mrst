@@ -98,7 +98,7 @@
     maxTime="1.57e8">
     <PeriodicEvent
       name="outputs"
-      timeFrequency="1e7"
+      timeFrequency="1e6"
       target="/Outputs/vtkOutput"/>
 
     <PeriodicEvent
@@ -112,6 +112,16 @@
       target="/Outputs/timeHistoryOutput2"/>
 
     <PeriodicEvent
+      name="timeHistoryOutput3"
+      timeFrequency="4.5e6"
+      target="/Outputs/timeHistoryOutput3"/>
+
+    <PeriodicEvent
+      name="timeHistoryOutput4"
+      timeFrequency="4.5e6"
+      target="/Outputs/timeHistoryOutput4"/>
+
+    <PeriodicEvent
       name="timeHistoryCollection1"
       timeFrequency="2e6"
       target="/Tasks/wellRateCollection1"/>
@@ -120,6 +130,16 @@
       name="timeHistoryCollection2"
       timeFrequency="2e6"
       target="/Tasks/wellRateCollection2"/>
+
+    <PeriodicEvent
+      name="timeHistoryCollection3"
+      timeFrequency="9e5"
+      target="/Tasks/wellPressureCollection1" />
+
+    <PeriodicEvent
+      name="timeHistoryCollection4"
+      timeFrequency="9e5"
+      target="/Tasks/wellPressureCollection2" />
 
     <PeriodicEvent
       name="solverApplications1"
@@ -142,7 +162,7 @@
 
     <PeriodicEvent
       name="restarts"
-      timeFrequency="1e7"
+      timeFrequency="5e7"
       targetExactTimestep="0"
       target="/Outputs/restartOutput"/>
   </Events>
@@ -257,6 +277,16 @@
       sources="{ /Tasks/wellRateCollection2 }"
       filename="wellRateHistory2"/>      
 
+    <TimeHistory
+      name="timeHistoryOutput3"
+      sources="{ /Tasks/wellPressureCollection1 }"
+      filename="wellPressureHistory1"/>
+
+    <TimeHistory
+      name="timeHistoryOutput4"
+      sources="{ /Tasks/wellPressureCollection2 }"
+      filename="wellPressureHistory2"/>
+
     <Restart
       name="restartOutput"/>
   </Outputs>
@@ -271,5 +301,16 @@
       name="wellRateCollection2"
       objectPath="ElementRegions/wellRegion2/wellRegion2UniqueSubRegion"
       fieldName="wellElementMixtureConnectionRate"/>
+
+    <PackCollection
+      name="wellPressureCollection1"
+      objectPath="ElementRegions/wellRegion1/wellRegion1UniqueSubRegion"
+      fieldName="pressure"/>
+
+    <PackCollection
+      name="wellPressureCollection2"
+      objectPath="ElementRegions/wellRegion2/wellRegion2UniqueSubRegion"
+      fieldName="pressure"/>
+
     </Tasks>
 </Problem>
