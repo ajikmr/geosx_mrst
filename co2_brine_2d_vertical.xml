@@ -113,12 +113,12 @@
 
     <PeriodicEvent
       name="timeHistoryOutput3"
-      timeFrequency="4.5e6"
+      timeFrequency="1e7"
       target="/Outputs/timeHistoryOutput3"/>
 
     <PeriodicEvent
       name="timeHistoryOutput4"
-      timeFrequency="4.5e6"
+      timeFrequency="1e7"
       target="/Outputs/timeHistoryOutput4"/>
 
     <PeriodicEvent
@@ -133,12 +133,12 @@
 
     <PeriodicEvent
       name="timeHistoryCollection3"
-      timeFrequency="9e5"
+      timeFrequency="2e6"
       target="/Tasks/wellPressureCollection1" />
 
     <PeriodicEvent
       name="timeHistoryCollection4"
-      timeFrequency="9e5"
+      timeFrequency="2e6"
       target="/Tasks/wellPressureCollection2" />
 
     <PeriodicEvent
