@@ -8,9 +8,10 @@
       flowSolverName="compositionalMultiphaseFlow"
       wellSolverName="compositionalMultiphaseWell"
       logLevel="1"
+      initialDt="1e2"
       targetRegions="{ Region1, wellRegion1, wellRegion2 }">
       <NonlinearSolverParameters
-        allowNonConverged="1"
+        allowNonConverged="0"
         newtonTol="1.0e-6"
         lineSearchAction="Attempt"
         logLevel="1"
@@ -152,7 +153,7 @@
 
     <PeriodicEvent
       name="solverApplications1"
-      forceDt="1e3"
+      forceDt="1e2"
       endTime="1e4"
       target="/Solvers/reservoirSystem"/>
 
@@ -160,13 +161,13 @@
       name="solverApplications2"
       forceDt="1e4"
       beginTime="1e4"
-      endTime="1e5"
+      endTime="1e6"
       target="/Solvers/reservoirSystem"/>
 
     <PeriodicEvent
       name="solverApplications3"
-      forceDt="1e5"
-      beginTime="1e5"
+      forceDt="1.728e5"
+      beginTime="1e6"
       target="/Solvers/reservoirSystem"/>
 
     <PeriodicEvent
